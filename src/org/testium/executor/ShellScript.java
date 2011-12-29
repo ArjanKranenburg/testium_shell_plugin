@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import org.testtoolinterfaces.testresult.TestResult;
 import org.testtoolinterfaces.testresult.TestResult.VERDICT;
 import org.testtoolinterfaces.testsuite.Parameter;
+import org.testtoolinterfaces.testsuite.ParameterImpl;
 import org.testtoolinterfaces.testsuite.ParameterArrayList;
 import org.testtoolinterfaces.utils.StreamGobbler;
 import org.testtoolinterfaces.utils.Trace;
@@ -76,7 +77,11 @@ public class ShellScript
     	ArrayList<Parameter> params = aParameters.sort();
     	for(int i=0; i<params.size(); i++)
     	{
-    		commandString += " " + params.get(i).getName() + " " + params.get(i).getValue().toString();
+    		if ( ParameterImpl.class.isInstance( params.get(i) ) )
+    		{
+    			ParameterImpl param = (ParameterImpl) params.get(i);
+    			commandString += " " + param.getName() + " " + param.getValue().toString();
+    		}
     	}
     	Trace.println(Trace.EXEC_PLUS, "Executing " + commandString);
     	Trace.println(Trace.EXEC_PLUS, "Writing log to " + aRunLog.getAbsolutePath());
