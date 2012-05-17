@@ -17,7 +17,6 @@ public final class ShellTestPlugin implements Plugin
 		// nop
 	}
 	
-	@Override
 	public void loadPlugIn( PluginCollection aPluginCollection,
 	                        RunTimeData aRtData) throws ConfigurationException
 	{

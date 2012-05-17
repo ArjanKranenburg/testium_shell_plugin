@@ -51,7 +51,6 @@ public class TestStepShellExecutor extends TestStepScriptAbstractExecutor
 		return runLog;
 	}
 
-	@Override
 	public String getType()
 	{
 		return TYPE;
