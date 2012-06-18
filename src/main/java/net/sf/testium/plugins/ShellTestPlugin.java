@@ -1,8 +1,8 @@
-package org.testium.plugins;
+package net.sf.testium.plugins;
 
-import org.testium.configuration.ConfigurationException;
-import org.testium.executor.TestCaseShellExecutor;
-import org.testium.executor.TestStepShellExecutor;
+import net.sf.testium.configuration.ConfigurationException;
+import net.sf.testium.executor.TestCaseShellExecutor;
+import net.sf.testium.executor.TestStepShellExecutor;
 import org.testtoolinterfaces.testresultinterface.TestCaseResultWriter;
 import org.testtoolinterfaces.utils.RunTimeData;
 

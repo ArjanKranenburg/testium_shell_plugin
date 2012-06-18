@@ -1,4 +1,4 @@
-package org.testium.executor;
+package net.sf.testium.executor;
 
 import java.io.BufferedWriter;
 import java.io.File;

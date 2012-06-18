@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.testium.executor;
+package net.sf.testium.executor;
 
 import java.io.File;
 import java.io.FileNotFoundException;
