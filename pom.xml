@@ -2,10 +2,17 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.sf.testium</groupId>
   <artifactId>shell-testium-plugin</artifactId>
-  <version>0.3.4-SNAPSHOT</version>
+  <version>0.3.4</version>
   <name>Testium Shell Plugin</name>
   <description>Shell Plugin for the Testium Executor</description>
   <url>http://testium.sf.net/</url>
+  <packaging>jar</packaging>
+
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
 
   <licenses>
     <license>
@@ -14,6 +21,20 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+
+  <scm>
+    <connection>scm:git:ssh://testium.git.sourceforge.net/gitroot/testium/shell_plugin</connection>
+    <developerConnection>scm:git:ssh://testium.git.sourceforge.net/gitroot/testium/shell_plugin</developerConnection>
+    <url>ssh://testium.git.sourceforge.net/gitroot/testium/shell_plugin</url>
+  </scm>
+ 
+  <developers>
+    <developer>
+      <id>arjankranenburg</id>
+      <name>Arjan Kranenburg</name>
+      <email>Arjan.Kranenburg@gmail.com</email>
+    </developer>
+  </developers>
 
   <dependencies>
   	<dependency>
@@ -25,7 +46,22 @@
   	<dependency>
   	  <groupId>net.sf.testium</groupId>
   	  <artifactId>testium</artifactId>
-  	  <version>0.3.4-SNAPSHOT</version>
+  	  <version>0.3.4</version>
+  	</dependency>
+  	<dependency>
+  	  <groupId>org.testtoolinterfaces</groupId>
+  	  <artifactId>utils</artifactId>
+  	  <version>0.1.6</version>
+  	</dependency>
+  	<dependency>
+  	  <groupId>org.testtoolinterfaces</groupId>
+  	  <artifactId>testsuite</artifactId>
+  	  <version>0.3.2</version>
+  	</dependency>
+  	<dependency>
+  	  <groupId>org.testtoolinterfaces</groupId>
+  	  <artifactId>testresult</artifactId>
+  	  <version>0.3.2</version>
   	</dependency>
   </dependencies>
 
